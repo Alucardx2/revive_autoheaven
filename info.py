@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '16913514') )
 API_HASH = environ.get('API_HASH', '9996dfffaa4a745d8a99e0dc73f570a9')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5264501642:AAFWFcGPOfQwNy6hj9UORlxADpCskdR2c7I')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6294212741:AAGQF1uHat6SkcE9z-9I5q_gkainMPHcZXM')
 
 # Bot settings
 PORT = environ.get("PORT", "8080")
@@ -22,18 +22,18 @@ TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/c94418669129fc55f8575.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/609fb6c6bd6eb9e15e797.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/76b38816c46209b495d47.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/ca99c6c62072f860ad3d1.jpg")
-NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/3bed35ee47a26f935a170.jpg")
+NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/609fb6c6bd6eb9e15e797.jpg")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '890230886 1154404230 1921088773 1612173220 1120465309 1268492137 930859384 1994336709').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001444805977').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001534801897').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001534801897')
-auth_grp = environ.get('AUTH_GROUPS', '-1001573188040')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001444805977')
+auth_grp = environ.get('AUTH_GROUPS', '0')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 FILDLT_CNL = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('FILDLT_CNL', '0').split()]
@@ -54,7 +54,7 @@ SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/HeavenForYouAll/7878')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001681090295'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001163913577'))
 RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', 0))
 
 # Bot Options
