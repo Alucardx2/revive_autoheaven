@@ -54,7 +54,7 @@ SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/HeavenForYouAll/7878')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001163913577'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001732386288'))
 RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', 0))
 
 # Bot Options
